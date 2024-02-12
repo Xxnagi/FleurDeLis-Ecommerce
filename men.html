@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="src/style-hover.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style-tes.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <title>Fleuer DeLis</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header aria-label="Site Header" class="bg-slate-900 montserrat-semi-bold">
+        <div class="max-w-full px-4 sm:px-6 lg:px-8 color">
+            <div class="flex items-center justify-between border-none navbar">
+
+                <div class="hidden md:block">
+                    <nav aria-label="Site Nav">
+                        <ul class="flex items-center gap-6 text-sm">
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="men.html">
+                                    MEN
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="women.html">
+                                    WOMEN
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="article.html">
+                                    ARTICLES
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+                <a href="home.html" class="block text-teal-600 2xl:ml-12" class="block text-teal-600 2xl:ml-12">
+                    <img src="Assets/Logo/main-logo.png" alt="" class="h-10">
+                </a>
+
+
+
+                <div class="hidden md:block">
+                    <nav aria-label="Site Nav">
+                        <ul class="flex items-center gap-6 text-sm ">
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="community-new.html">
+                                    COMMUNITY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="donation.html">
+                                    DONATION
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="cart.html">
+                                    <img class=" h-4 w-4" src="Assets/Logo/cart-main.png" alt="">
+                                </a>
+                            </li>
+
+                            <div class="dropdown dropdown-end mt-1">
+                                <label tabindex="0" class="">
+                                    <img class="w-4" src="Assets/Logo/icon-main.png" alt="">
+                                </label>
+                                <ul tabindex="0"
+                                    class="dropdown-content text-white menu p-2 mt-4 shadow bg-slate-800 rounded-box w-52">
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="access-login.html">Setting</a></li>
+                                    <li><a href="/access.html">Login</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+                <div class="drawer-end visible md:hidden">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <!-- Page content here -->
+                        <label for="my-drawer-4" class="drawer-button btn bg-transparent">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg></label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer-4" class="drawer-overlay"></label>
+                        <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                            <!-- Sidebar content here -->
+                            <li><a href="men.html">Men</a></li>
+                            <li><a href="women.html">Women</a></li>
+                            <li><a href="article.html">Articles</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="donation.html">Donation</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="access.html">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+    <!-- BODY -->
+
+    <p class="montserrat-bold pt-16 text-5xl flex justify-center">Men</p>
+    <hr class="w-11/12 mx-auto mt-12 mb-12 h-0.5">
+
+
+
+    <div class="container">
+
+
+        <div class="mx-auto max-w-screen-xl px-4 py-1 md:px-6 lg:px-8">
+
+            <section class=" flex flex-cols px-4 md:px-6 lg:px-8">
+                <!-- <input type="text" class="w-48 h-8 pl-2 mx-auto text-center" id="search-items" placeholder="Search Products" onkeyup="search()"> -->
+
+                <input type="text" id="search-items" placeholder="Search Products"
+                    class="input input-bordered w-full max-w-xs bg-white mx-auto" onkeyup="search()" />
+            </section>
+
+            <div class="mt-8 sm:flex sm:items-center sm:justify-between">
+                <div class="block sm:hidden">
+                    <button
+                        class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
+                        <span class="text-sm font-medium"> Filters & Sorting </span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-4 w-4 rtl:rotate-180">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden sm:flex sm:gap-4">
+                    <div class="relative">
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary
+                                class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
+                                <span class="text-sm font-medium"> Availability </span>
+
+                                <span class="transition group-open:-rotate-180">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </summary>
+
+                            <div
+                                class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 ltr:group-open:start-0">
+                                <div class="w-96 rounded border border-gray-200 bg-white">
+                                    <header class="flex items-center justify-between p-4">
+                                        <span class="text-sm text-gray-700"> 0 Selected </span>
+
+                                        <button type="button"
+                                            class="text-sm text-gray-900 underline underline-offset-4">
+                                            Reset
+                                        </button>
+                                    </header>
+
+                                    <ul class="space-y-1 border-t border-gray-200 p-4">
+                                        <li>
+                                            <label for="FilterInStock" class="inline-flex items-center gap-2">
+                                                <input type="checkbox" id="FilterInStock"
+                                                    class="h-5 w-5 rounded border-gray-300" />
+
+                                                <span class="text-sm font-medium text-gray-700">
+                                                    In Stock (5+)
+                                                </span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label for="FilterPreOrder" class="inline-flex items-center gap-2">
+                                                <input type="checkbox" id="FilterPreOrder"
+                                                    class="h-5 w-5 rounded border-gray-300" />
+
+                                                <span class="text-sm font-medium text-gray-700">
+                                                    Pre Order (3+)
+                                                </span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label for="FilterOutOfStock" class="inline-flex items-center gap-2">
+                                                <input type="checkbox" id="FilterOutOfStock"
+                                                    class="h-5 w-5 rounded border-gray-300" />
+
+                                                <span class="text-sm font-medium text-gray-700">
+                                                    Out of Stock (10+)
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="relative">
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary
+                                class="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
+                                <span class="text-sm font-medium"> Price </span>
+
+                                <span class="transition group-open:-rotate-180">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </summary>
+
+                            <div
+                                class="z-50 group-open:absolute group-open:top-auto group-open:mt-2 ltr:group-open:start-0">
+                                <div class="w-96 rounded border border-gray-200 bg-white">
+                                    <header class="flex items-center justify-between p-4">
+                                        <span class="text-sm text-gray-700">
+                                            The highest price is $600
+                                        </span>
+
+                                        <button type="button"
+                                            class="text-sm text-gray-900 underline underline-offset-4">
+                                            Reset
+                                        </button>
+                                    </header>
+
+                                    <div class="border-t border-gray-200 p-4">
+                                        <div class="flex justify-between gap-4">
+                                            <label for="FilterPriceFrom" class="flex items-center gap-2">
+                                                <span class="text-sm text-gray-600">$</span>
+
+                                                <input type="number" id="FilterPriceFrom" placeholder="From"
+                                                    class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
+                                            </label>
+
+                                            <label for="FilterPriceTo" class="flex items-center gap-2">
+                                                <span class="text-sm text-gray-600">$</span>
+
+                                                <input type="number" id="FilterPriceTo" placeholder="To"
+                                                    class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="hidden sm:block">
+                    <label for="SortBy" class="sr-only">SortBy</label>
+
+                    <select id="SortBy" class="h-10 rounded border-gray-300 text-sm bg-white">
+                        <option>Sort By</option>
+                        <option value="Title, DESC">Title, DESC</option>
+                        <option value="Title, ASC">Title, ASC</option>
+                        <option value="Price, DESC">Price, DESC</option>
+                        <option value="Price, ASC">Price, ASC</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+            <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" id="items-list">
+
+
+                <div id="items">
+                    <a href="catalog-men/1.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/Men/8.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+                        <div class="md:relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Tulipes Hoodie
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/2.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/Men/12.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Cosmique Shirt
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/3.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/Men/16.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Galanthus Coat
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/4.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/Men/23.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Pensées Coat
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/5.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/Men/24.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Hawkins Jacket
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/6.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X KEITH HARRING/1.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Pivoines Trouser
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/7.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X KEITH HARRING/8.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Pivoines Trouser
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/8.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X KEITH HARRING/11.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Pivoines T-Shirt Short-Sleeves
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/9.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X KEITH HARRING/14.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Pivoines T-Shirt Long-Sleeves
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/10.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X MUGLER/20.png" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Pétunias Trousers
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/11.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X MUGLER/16.png" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Orchidées Hoodie
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/12.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X KEITH HARRING/16.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Rose Shirt
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men/13.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X KEITH HARRING/19.jpg" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Sweater
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X MUGLER/4.png" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Orchidée T-Shirt Black
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X MUGLER/8.png" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Orchidée T-Shirt Black
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="items">
+                    <a href="catalog-men.html" class="group block overflow-hidden">
+                        <img src="Assets/Image/ARTICLE/FLEUR DE LIS X MUGLER/12.png" alt=""
+                            class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] rounded-lg" />
+
+                        <div class="relative bg-white pt-3">
+                            <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                                Fleur de Orchidée T-Shirt Black
+                            </h3>
+
+                            <p class="mt-2">
+                                <span class="sr-only"> Regular Price </span>
+
+                                <span class="tracking-wider text-gray-900"> $24.00 </span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+    <ol class="flex justify-center gap-1 text-xs font-medium mb-16 mt-16">
+        <li>
+            <a href="#" class="block h-8 w-8 rounded border-blue-600 bg-blue-600 text-center leading-8 text-white">
+                1
+            </a>
+        </li>
+
+        <li>
+            <a href="pagination/men2.html"
+                class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900">
+                2
+            </a>
+        </li>
+
+        <li>
+            <a href="pagination/men3.html"
+                class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900">
+                3
+            </a>
+        </li>
+
+        <li>
+            <a href="pagination/men4.html"
+                class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900">
+                4
+            </a>
+        </li>
+    </ol>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-800 dark:bg-gray-800 pt-4 pb-8 xl:pt-8">
+        <div class="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-300">
+            <ul class="flex flex-no-rap justify-center pb-8 text-lg font-light">
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="montserrat-bold text-gray-500 dark:text-gray-200 text-xl uppercase mb-4">
+                            SHOP
+                        </h2>
+                        <ul class="text-sm md:text-lg">
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Men
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Women
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Trending
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="montserrat-bold text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            HELP
+                        </h2>
+                        <ul class="text-sm md:text-lg">
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Return Policy
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Accsesibility
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="montserrat-bold text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            The Company
+                        </h2>
+                        <ul class="text-sm md:text-lg">
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="about.html">
+                                    About Fleur de Lis
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Legal
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Corporate Information
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="montserrat-bold text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            LOCATION
+                        </h2>
+                        <ul class="text-sm md:text-lg">
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    Jl. Veteran, Ketawanggede, Kec.
+                                    Lowokwaru, Kota Malang,
+                                    Jawa Timur 65145
+                                </a>
+                            </li>
+
+
+                            <li
+                                class="montserrat-bold mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    E-Mail
+                                </a>
+                            </li>
+                            <li
+                                class="montserrat mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                <a href="#">
+                                    fleurdelis@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between">
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor"
+                        class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                        viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor"
+                        class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                        viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                        viewBox="0 0 1792 1792">
+                        <path
+                            d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor"
+                        class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                        viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor"
+                        class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                        viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1551 1476q15-6 26-3t11 17.5-15 33.5q-13 16-44 43.5t-95.5 68-141 74-188 58-229.5 24.5q-119 0-238-31t-209-76.5-172.5-104-132.5-105-84-87.5q-8-9-10-16.5t1-12 8-7 11.5-2 11.5 4.5q192 117 300 166 389 176 799 90 190-40 391-135zm207-115q11 16 2.5 69.5t-28.5 102.5q-34 83-85 124-17 14-26 9t0-24q21-45 44.5-121.5t6.5-98.5q-5-7-15.5-11.5t-27-6-29.5-2.5-35 0-31.5 2-31 3-22.5 2q-6 1-13 1.5t-11 1-8.5 1-7 .5h-10l-3-.5-2-1.5-1.5-3q-6-16 47-40t103-30q46-7 108-1t76 24zm-394-443q0 31 13.5 64t32 58 37.5 46 33 32l13 11-227 224q-40-37-79-75.5t-58-58.5l-19-20q-11-11-25-33-38 59-97.5 102.5t-127.5 63.5-140 23-137.5-21-117.5-65.5-83-113-31-162.5q0-84 28-154t72-116.5 106.5-83 122.5-57 130-34.5 119.5-18.5 99.5-6.5v-127q0-65-21-97-34-53-121-53-6 0-16.5 1t-40.5 12-56 29.5-56 59.5-48 96l-294-27q0-60 22-119t67-113 108-95 151.5-65.5 190.5-24.5q100 0 181 25t129.5 61.5 81 83 45 86 12.5 73.5v589zm-672 21q0 86 70 133 66 44 139 22 84-25 114-123 14-45 14-101v-162q-59 2-111 12t-106.5 33.5-87 71-32.5 114.5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
+                © 2023 Fleur de Lis, Inc. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CDN LINK -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- OWN JS -->
+    <script src="src/script.js"></script>
+    <script src="src/script_slider.js"></script>
+    <script src="src/tab.js"></script>
+    <script src="src/transition.js"></script>
+
+
+    <script>
+        const search = () => {
+            const searchbox = document.getElementById("search-items").value.toUpperCase();
+            const storeitems = document.getElementById("items-list");
+            const product = document.querySelectorAll("#items");
+            const itemsname = storeitems.getElementsByTagName("h3");
+
+            for (var i = 0; i < itemsname.length; i++) {
+                let match = items[i].getElementsByTagName("h3")[0];
+
+                if (match) {
+                    let textvalue = match.textContent || match.innerHTML;
+
+                    if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                        product[i].style.display = "";
+                    } else {
+                        product[i].style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+
+
+</body>
+
+</html>

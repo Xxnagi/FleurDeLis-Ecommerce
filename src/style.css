@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*font*/
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.montserrat-reguler {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.montserrat-semi-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+/* Color */
+/* bg-sky-950 . main color */
+
+.navbar {
+  height: 10vh;
+}
+
+.detail-button {
+  height: 50px;
+  width: 25px;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+.vh-30 {
+  height: 20vh;
+}
+
+.vh-20 {
+  height: 20vh;
+}
+
+.vh-10 {
+  height: 10vh;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.main {
+  height: 500px;
+}
+
+.swiper-button-next {
+  color: #1a1f23;
+}
+
+.swiper-button-prev {
+  color: #1a1f23;
+}
+
+.card-zoom {
+  transition: all;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.card-zoom-image {
+  display: absolute;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-zoom-image:hover {
+  transform: scale(1.1);
+}
+
+hr {
+  background: black;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.border-bottom {
+  border-bottom: 2px solid rgba(229, 229, 229);
+}
+
+.tab-btn.active {
+  color: black;
+}
+
+.line {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background-color: #569daa;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-box .content {
+  display: none;
+  animation: moving 0.5s ease;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.content-box .content.active {
+  display: block;
+}
